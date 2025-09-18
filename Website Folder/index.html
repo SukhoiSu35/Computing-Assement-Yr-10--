@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Motivation</title>
+
+  <!-- Link to our CSS file (must be in the same folder) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER (top of the page) -->
+  <header>
+    <h1>🌟 Daily Motivation</h1>
+    <!-- Navigation buttons (filters for categories) -->
+    <nav>
+      <button class="filter active">All</button>
+      <button class="filter">Leadership</button>
+      <button class="filter">Success</button>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Daily Quote Section -->
+    <section class="quote-card">
+      <h2>Daily Quote</h2>
+      <!-- The actual quote -->
+      <p class="quote-text">
+        “The future belongs to those who believe in the beauty of their dreams.”
+      </p>
+      <!-- Who said it -->
+      <p class="author">— Eleanor Roosevelt <span class="tag">Dreams</span></p>
+      <!-- Buttons (like, share, copy) -->
+      <div class="actions">
+        <button>❤️ 1292</button>
+        <button>🔗</button>
+        <button>📋</button>
+      </div>
+    </section>
+
+    <!-- Other Quotes Section -->
+    <section>
+      <h2>All Quotes</h2>
+
+      <!-- Quote 1 -->
+      <div class="quote-card">
+        <span class="tag">Success</span>
+        <p class="quote-text">“The only way to do great work is to love what you do.”</p>
+        <p class="author">— Steve Jobs</p>
+        <div class="actions">
+          <button>❤️ 758</button>
+          <button>🔗</button>
+          <button>📋</button>
+        </div>
+      </div>
+
+      <!-- Quote 2 -->
+      <div class="quote-card">
+        <span class="tag">Leadership</span>
+        <p class="quote-text">“Innovation distinguishes between a leader and a follower.”</p>
+        <p class="author">— Steve Jobs</p>
+        <div class="actions">
+          <button>❤️ 55</button>
+          <button>🔗</button>
+          <button>📋</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Daily Motivation</p>
+  </footer>
+
+  <!-- Small JavaScript to auto-update the year -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

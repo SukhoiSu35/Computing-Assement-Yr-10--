@@ -1,0 +1,80 @@
+/* ===== Basic Page Setup ===== */
+body {
+  margin: 0;                        /* Remove default spacing */
+  font-family: Arial, sans-serif;   /* Simple font */
+  background: #f0f4ff;              /* Light background */
+  color: #222;                      /* Dark text */
+  line-height: 1.6;                 /* Better spacing between lines */
+  padding: 1rem;                    /* Space around the page */
+}
+
+/* ===== Header Styling ===== */
+header {
+  text-align: center;               /* Center the content */
+  margin-bottom: 2rem;              /* Space below header */
+}
+
+header h1 {
+  margin: 0.5rem 0;                 /* Small space above/below */
+}
+
+nav { margin-top: 1rem; }
+
+.filter {
+  padding: 0.5rem 1rem;             /* Add button padding */
+  border: 1px solid #3b82f6;        /* Blue border */
+  background: white;                /* White background */
+  border-radius: 20px;              /* Rounded pill shape */
+  cursor: pointer;
+}
+
+.filter.active {
+  background: #3b82f6;              /* Blue background */
+  color: white;                     /* White text */
+}
+
+/* ===== Quote Cards ===== */
+.quote-card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;              /* Space between cards */
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.author { font-weight: bold; }
+
+.tag {
+  background: #3b82f6;              /* Blue background */
+  color: white;                     /* White text */
+  border-radius: 8px;
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ===== Buttons inside quote cards ===== */
+.actions { margin-top: 0.5rem; }
+
+.actions button {
+  border: none;
+  background: #eee;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}

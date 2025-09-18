@@ -28,12 +28,12 @@ Charity App
 
 **Requirements Outline**
 
-Requirements Outline:
-o Outline functional and non-functional requirements for your website / app.
 
 Functional Requirements 
 
 - A daily motivational quote should appear on the homepage, giving users instant inspiration each time they visit.
+
+- Users should be able to 
 
 - The site should include a quote library with categories (e.g., Success, Leadership, Happiness, Focus) to help users quickly find the type of motivation they’re looking for.
 
