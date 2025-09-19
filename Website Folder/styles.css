@@ -1,80 +1,207 @@
-/* ===== Basic Page Setup ===== */
+/* Page */
 body {
-  margin: 0;                        /* Remove default spacing */
-  font-family: Arial, sans-serif;   /* Simple font */
-  background: #f0f4ff;              /* Light background */
-  color: #222;                      /* Dark text */
-  line-height: 1.6;                 /* Better spacing between lines */
-  padding: 1rem;                    /* Space around the page */
+  font-family: Arial, sans-serif;
+  background: #f5f7ff;
+  color: #222;
+  margin: 0;
 }
 
-/* ===== Header Styling ===== */
-header {
-  text-align: center;               /* Center the content */
-  margin-bottom: 2rem;              /* Space below header */
+h1 {
+  margin: 0;
 }
 
-header h1 {
-  margin: 0.5rem 0;                 /* Small space above/below */
+h2 {
+  margin: 0;
 }
 
-nav { margin-top: 1rem; }
-
-.filter {
-  padding: 0.5rem 1rem;             /* Add button padding */
-  border: 1px solid #3b82f6;        /* Blue border */
-  background: white;                /* White background */
-  border-radius: 20px;              /* Rounded pill shape */
-  cursor: pointer;
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
 
-.filter.active {
-  background: #3b82f6;              /* Blue background */
-  color: white;                     /* White text */
+.muted {
+  color: #667085;
 }
 
-/* ===== Quote Cards ===== */
-.quote-card {
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 1rem;
-  margin-bottom: 1rem;              /* Space between cards */
+/* Header */
+.bar {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-.quote-text {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin: 1rem 0;
+.bar .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
 }
 
-.author { font-weight: bold; }
+.brand {
+  color: #2563eb;
+}
 
+/* Chips / tags */
+.chip,
 .tag {
-  background: #3b82f6;              /* Blue background */
-  color: white;                     /* White text */
-  border-radius: 8px;
-  padding: 0.2rem 0.5rem;
-  margin-left: 0.5rem;
-  font-size: 0.9rem;
+  display: inline-block;
+  background: #eaf2ff;
+  color: #1e40af;
+  border: 1px solid #dbeafe;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-/* ===== Buttons inside quote cards ===== */
-.actions { margin-top: 0.5rem; }
-
-.actions button {
-  border: none;
-  background: #eee;
-  padding: 0.4rem 0.6rem;
-  border-radius: 6px;
-  margin-right: 0.3rem;
+/* Buttons */
+.btn {
+  background: #2563eb;
+  color: #fff;
+  border: 1px solid #2563eb;
+  padding: 8px 12px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
-/* ===== Footer ===== */
-footer {
+.btn-outline {
+  background: #fff;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 6px;
+}
+
+.icon {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.link {
+  background: transparent;
+  border: none;
+  color: #667085;
+  cursor: pointer;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Quote text */
+.quote {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.big {
+  font-size: 22px;
   text-align: center;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #666;
+}
+
+.quote-mark {
+  color: #94a3b8;
+  margin: 0;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Grid (responsive) */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+}
+
+.grid .card {
+  width: 100%;
+  margin: 8px;
+}
+
+@media (min-width: 700px) {
+  .grid .card {
+    width: calc(50% - 16px);
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid .card {
+    width: calc(33.333% - 16px);
+  }
+}
+
+/* Modal */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+#modal {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 620px;
+  padding: 16px;
+  position: relative;
+}
+
+#close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.modal-quote {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+/* Footer */
+.foot {
+  text-align: center;
+  color: #667085;
+  padding: 20px 0 40px;
 }

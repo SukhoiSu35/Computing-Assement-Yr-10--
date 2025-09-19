@@ -2,81 +2,190 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daily Motivation</title>
-
-  <!-- Link to our CSS file (must be in the same folder) -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- HEADER (top of the page) -->
-  <header>
-    <h1>🌟 Daily Motivation</h1>
-    <!-- Navigation buttons (filters for categories) -->
-    <nav>
-      <button class="filter active">All</button>
-      <button class="filter">Leadership</button>
-      <button class="filter">Success</button>
-    </nav>
+
+  <!-- Header -->
+  <header class="bar">
+    <div class="wrap">
+      <div>
+        <h1 class="brand">Daily Motivation</h1>
+        <p class="muted">Inspiring quotes to brighten your day</p>
+      </div>
+      <div>
+        <button class="link">All ▾</button>
+        <button class="btn">Random Quote</button>
+        <button class="icon" aria-label="Settings">⚙️</button>
+      </div>
+    </div>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main>
-    <!-- Daily Quote Section -->
-    <section class="quote-card">
-      <h2>Daily Quote</h2>
-      <!-- The actual quote -->
-      <p class="quote-text">
-        “The future belongs to those who believe in the beauty of their dreams.”
-      </p>
-      <!-- Who said it -->
-      <p class="author">— Eleanor Roosevelt <span class="tag">Dreams</span></p>
-      <!-- Buttons (like, share, copy) -->
-      <div class="actions">
-        <button>❤️ 1292</button>
-        <button>🔗</button>
-        <button>📋</button>
+  <main class="wrap">
+
+    <!-- Daily Quote -->
+    <section class="card">
+      <div class="row">
+        <span class="chip">Daily Quote</span>
+        <span class="muted">Thursday, September 18, 2025</span>
+      </div>
+
+      <!-- click area to open the modal -->
+      <div class="open"
+           data-tag="Dreams"
+           data-text="The future belongs to those who believe in the beauty of their dreams."
+           data-author="Eleanor Roosevelt"
+           data-likes="1292">
+        <p class="quote-mark">"</p>
+        <p class="quote big">The future belongs to those who believe in the beauty of their dreams.</p>
+        <p class="quote-mark right">"</p>
+      </div>
+
+      <div class="row">
+        <p class="muted">— Eleanor Roosevelt</p>
+        <span class="tag">Dreams</span>
+      </div>
+
+      <div class="row">
+        <div></div>
+        <div>
+          <button class="link">♡ 1292</button>
+          <button class="icon" title="Share">↥</button>
+          <button class="icon" title="Copy">⧉</button>
+        </div>
       </div>
     </section>
 
-    <!-- Other Quotes Section -->
-    <section>
-      <h2>All Quotes</h2>
+    <!-- All Quotes -->
+    <div class="row" style="margin:20px 0 10px;">
+      <div class="title">
+        <span>✦</span><h2>All Quotes</h2>
+      </div>
+      <span class="chip muted">20 quotes</span>
+    </div>
 
-      <!-- Quote 1 -->
-      <div class="quote-card">
+    <!-- Simple responsive grid -->
+    <section class="grid">
+
+      <article class="card">
         <span class="tag">Success</span>
-        <p class="quote-text">“The only way to do great work is to love what you do.”</p>
-        <p class="author">— Steve Jobs</p>
-        <div class="actions">
-          <button>❤️ 758</button>
-          <button>🔗</button>
-          <button>📋</button>
+        <div class="open"
+             data-tag="Success"
+             data-text="The only way to do great work is to love what you do."
+             data-author="Steve Jobs"
+             data-likes="758">
+          <p class="quote">"The only way to do great work is to love what you do."</p>
         </div>
-      </div>
+        <div class="row">
+          <span class="muted">— Steve Jobs</span>
+          <div>
+            <button class="link">♡ 758</button>
+            <button class="icon">↥</button>
+            <button class="icon">⧉</button>
+          </div>
+        </div>
+      </article>
 
-      <!-- Quote 2 -->
-      <div class="quote-card">
+      <article class="card">
         <span class="tag">Leadership</span>
-        <p class="quote-text">“Innovation distinguishes between a leader and a follower.”</p>
-        <p class="author">— Steve Jobs</p>
-        <div class="actions">
-          <button>❤️ 55</button>
-          <button>🔗</button>
-          <button>📋</button>
+        <div class="open"
+             data-tag="Leadership"
+             data-text="Innovation distinguishes between a leader and a follower."
+             data-author="Steve Jobs"
+             data-likes="55">
+          <p class="quote">"Innovation distinguishes between a leader and a follower."</p>
         </div>
-      </div>
+        <div class="row">
+          <span class="muted">— Steve Jobs</span>
+          <div>
+            <button class="link">♡ 55</button>
+            <button class="icon">↥</button>
+            <button class="icon">⧉</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Life</span>
+        <div class="open"
+             data-tag="Life"
+             data-text="Life is what happens to you while you're busy making other plans."
+             data-author="John Lennon"
+             data-likes="170">
+          <p class="quote">"Life is what happens to you while you're busy making other plans."</p>
+        </div>
+        <div class="row">
+          <span class="muted">— John Lennon</span>
+          <div>
+            <button class="link">♡ 170</button>
+            <button class="icon">↥</button>
+            <button class="icon">⧉</button>
+          </div>
+        </div>
+      </article>
+
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© <span id="year"></span> Daily Motivation</p>
+  <!-- Modal -->
+  <div id="overlay">
+    <div id="modal">
+      <button id="close" class="icon" aria-label="Close">✕</button>
+      <div class="center">
+        <span id="mTag" class="tag">Tag</span>
+      </div>
+      <div class="modal-quote">
+        <p class="quote-mark">"</p>
+        <p id="mText" class="quote big">Quote</p>
+        <p class="quote-mark right">"</p>
+      </div>
+      <p class="center muted">— <span id="mAuthor">Author</span></p>
+      <div class="center" style="margin-top:10px;">
+        <button id="mLikes" class="btn-outline">♡ 0</button>
+        <button class="btn-outline">Share</button>
+        <button id="copy" class="btn-outline">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="wrap foot">
+    © <span id="y"></span> Daily Motivation
   </footer>
 
-  <!-- Small JavaScript to auto-update the year -->
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    // year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // modal logic
+    const overlay = document.getElementById('overlay');
+    const mText = document.getElementById('mText');
+    const mTag = document.getElementById('mTag');
+    const mAuthor = document.getElementById('mAuthor');
+    const mLikes = document.getElementById('mLikes');
+
+    document.addEventListener('click', function (e) {
+      const box = e.target.closest('.open');
+      if (!box) return;
+      mText.textContent = box.dataset.text;
+      mTag.textContent = box.dataset.tag;
+      mAuthor.textContent = box.dataset.author;
+      mLikes.textContent = '♡ ' + (box.dataset.likes || '0');
+      overlay.style.display = 'flex';
+    });
+
+    document.getElementById('close').onclick = function () {
+      overlay.style.display = 'none';
+    };
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) overlay.style.display = 'none';
+    });
+
+    document.getElementById('copy').onclick = function () {
+      const text = '"' + mText.textContent + '" — ' + mAuthor.textContent;
+      navigator.clipboard.writeText(text).then(function(){ alert('Copied!'); });
+    };
   </script>
 </body>
 </html>
