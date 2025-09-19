@@ -86,10 +86,34 @@ At the same time, digital platforms, while offering connection—can also make t
 
 **Primary Research**
 
+Primary Research Results & Evaluation
+
+I conducted a survey with 20 participants to understand stress levels and how motivational quotes are currently used. The results showed that 35% of people rated their stress as 10/10, while another 30% rated it at 3/10, suggesting that stress levels vary widely and that some people experience it far more intensely than others. This highlights the importance of creating an app that can support users across different stress levels with flexible features.
+
+![alt text](<Screenshot 2025-09-16 at 15.06.27.png>)
+
+When asked about motivational quotes, 45% of respondents said they rarely see quotes that motivate them, while 15% said they see them very often (10/10). This tells me that although some people are surrounded by motivational content, for many it is not consistent or accessible. My app can help fill this gap by delivering regular, personalised quotes to those who need more frequent encouragement.
+
+![alt text](<Screenshot 2025-09-16 at 15.06.36.png>)
+
+The final question confirmed this: 55% of respondents said they don’t see any motivational quotes around them at all, while only 20% said they see 1–5. This shows a clear opportunity for my app, as most people don’t currently encounter motivational content in their daily lives.
+
+![alt text](<Form Question .png>)
+
+Overall, my research made it clear that Australians do experience stress but aren’t regularly exposed to motivational content that could support them. Moving forward, I will design my app to provide daily motivational quotes combined with customisable reminders, so users can control how often they engage with the app without feeling overwhelmed.
 
 
 **UI / UX Design**
 
+To design the user interface for my motivational app, I created and compared alternative designs using wireframes and storyboards. I sketched out different layouts on paper to explore ideas quickly, before moving on to digital prototypes in Figma.
+
+My first design option had a homepage focused only on a daily quote, with a minimal layout and a single “next quote” button. The strength of this design was its simplicity, but the weakness was that it didn’t encourage deeper engagement.
+
+My second design option included a homepage with tabs for “Daily Quote,” “Habit Tracker,” and “Saved Quotes.” This design gave users more functionality but risked feeling cluttered if too many features were added.
+
+My final storyboard combined the strengths of both. It used a clean homepage with the daily quote at the centre, but also included subtle navigation buttons for habits and saved content. This design was more balanced, keeping the interface simple but still allowing users to explore features if they wanted.
+
+After evaluating these options, I chose the final storyboard design because it aligns best with my survey results. Users wanted motivational quotes as the main feature, but they also valued reminders and tracking progress. This design makes motivational quotes the focus while still providing easy access to additional features.
 
 
 **Prototype**

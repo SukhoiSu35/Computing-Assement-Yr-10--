@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Motivation</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- load JS externally (no inline code) -->
+  <script src="app.js" defer></script>
+</head>
+<body id="top">
+  <!-- Header -->
+  <header class="bar">
+    <div class="wrap">
+      <div>
+        <a href="#top" class="brand">Daily Motivation</a>
+        <p class="muted">Inspiring quotes to brighten your day</p>
+      </div>
+      <nav>
+        <a href="#all-quotes" class="link">All</a>
+        <a href="#" id="randomLink" class="btn">Random Quote</a>
+        <a href="/login" class="btn-outline">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Daily Quote -->
+    <div class="card" id="daily">
+      <div class="row">
+        <p class="chip">Daily Quote</p>
+        <p class="muted">Thursday, September 18, 2025</p>
+      </div>
+
+      <!-- Click target (no onclick here) -->
+      <div class="open"
+           data-tag="Dreams"
+           data-text="The future belongs to those who believe in the beauty of their dreams."
+           data-author="Eleanor Roosevelt"
+           data-likes="1292">
+        <p class="quote-mark">"</p>
+        <p class="quote big">The future belongs to those who believe in the beauty of their dreams.</p>
+        <p class="quote-mark right">"</p>
+      </div>
+
+      <div class="row">
+        <p class="muted">— Eleanor Roosevelt</p>
+        <p class="tag">Dreams</p>
+      </div>
+
+      <div class="row">
+        <div></div>
+        <div>
+          <button class="link">♡ 1292</button>
+          <button class="icon" title="Share">↥</button>
+          <button class="icon" title="Copy">⧉</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- All Quotes -->
+    <div class="row" style="margin:20px 0 10px;" id="all-quotes">
+      <div class="title">
+        <p>✦</p>
+        <h2>All Quotes</h2>
+      </div>
+      <p class="chip muted">25 quotes</p>
+    </div>
+
+    <!-- Grid (showing first 6 for brevity; keep the rest same structure) -->
+    <section class="grid">
+      <div class="card">
+        <p class="tag">Success</p>
+        <div class="open"
+             data-tag="Success"
+             data-text="The only way to do great work is to love what you do."
+             data-author="Steve Jobs"
+             data-likes="758">
+          <p class="quote">"The only way to do great work is to love what you do."</p>
+        </div>
+        <div class="row"><p class="muted">— Steve Jobs</p><div><button class="link">♡ 758</button><button class="icon">↥</button><button class="icon">⧉</button></div></div>
+      </div>
+
+      <div class="card">
+        <p class="tag">Leadership</p>
+        <div class="open"
+             data-tag="Leadership"
+             data-text="Innovation distinguishes between a leader and a follower."
+             data-author="Steve Jobs"
+             data-likes="55">
+          <p class="quote">"Innovation distinguishes between a leader and a follower."</p>
+        </div>
+        <div class="row"><p class="muted">— Steve Jobs</p><div><button class="link">♡ 55</button><button class="icon">↥</button><button class="icon">⧉</button></div></div>
+      </div>
+
+      <div class="card">
+        <p class="tag">Life</p>
+        <div class="open"
+             data-tag="Life"
+             data-text="Life is what happens to you while you're busy making other plans."
+             data-author="John Lennon"
+             data-likes="170">
+          <p class="quote">"Life is what happens to you while you're busy making other plans."</p>
+        </div>
+        <div class="row"><p class="muted">— John Lennon</p><div><button class="link">♡ 170</button><button class="icon">↥</button><button class="icon">⧉</button></div></div>
+      </div>
+
+      <div class="card">
+        <p class="tag">Courage</p>
+        <div class="open"
+             data-tag="Courage"
+             data-text="Success is not final, failure is not fatal: it is the courage to continue that counts."
+             data-author="Winston Churchill"
+             data-likes="666">
+          <p class="quote">"Success is not final, failure is not fatal: it is the courage to continue that counts."</p>
+        </div>
+        <div class="row"><p class="muted">— Winston Churchill</p><div><button class="link">♡ 666</button><button class="icon">↥</button><button class="icon">⧉</button></div></div>
+      </div>
+
+      <div class="card">
+        <p class="tag">Action</p>
+        <div class="open"
+             data-tag="Action"
+             data-text="The only impossible journey is the one you never begin."
+             data-author="Tony Robbins"
+             data-likes="885">
+          <p class="quote">"The only impossible journey is the one you never begin."</p>
+        </div>
+        <div class="row"><p class="muted">— Tony Robbins</p><div><button class="link">♡ 885</button><button class="icon">↥</button><button class="icon">⧉</button></div></div>
+      </div>
+
+      <div class="card">
+        <p class="tag">Opportunity</p>
+        <div class="open"
+             data-tag="Opportunity"
+             data-text="In the middle of difficulty lies opportunity."
+             data-author="Albert Einstein"
+             data-likes="936">
+          <p class="quote">"In the middle of difficulty lies opportunity."</p>
+        </div>
+        <div class="row"><p class="muted">— Albert Einstein</p><div><button class="link">♡ 936</button><button class="icon">↥</button><button class="icon">⧉</button></div></div>
+      </div>
+
+      <!-- ✱ Duplicate the same pattern until you have all 25 quotes (no onclick anywhere). -->
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="overlay">
+    <div id="modal">
+      <button id="close" class="icon" aria-label="Close">✕</button>
+      <div class="center"><p id="mTag" class="tag">Tag</p></div>
+      <div class="modal-quote">
+        <p class="quote-mark">"</p>
+        <p id="mText" class="quote big">Quote</p>
+        <p class="quote-mark right">"</p>
+      </div>
+      <p class="center muted">— <span id="mAuthor">Author</span></p>
+      <div class="center modal-buttons">
+        <button id="mLikes" class="btn-outline">♡ 0</button>
+        <button class="btn-outline">Share</button>
+        <button id="copyBtn" class="btn-outline">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="wrap foot">© <span id="y"></span> Daily Motivation</footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login • Daily Motivation</title>
+  <!-- absolute path so it works at /login -->
+  <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Login</h1>
+
+    <!-- If Flask passes an error, it will show here; otherwise blank -->
+    <p class="err">{{ error }}</p>
+
+    <form method="post" action="/login">
+      <label for="username">Username</label>
+      <input id="username" name="username" required>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required>
+
+      <button class="btn" type="submit">Sign in</button>
+    </form>
+
+    <p class="hint">Demo: <b>admin</b> / <b>test123</b></p>
+    <p class="nav"><a href="/">← Back to site</a></p>
+  </div>
+</body>
+</html>

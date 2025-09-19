@@ -1,0 +1,74 @@
+/* Page */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7ff;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.box {
+  width: 100%;
+  max-width: 380px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+/* Heading */
+h1 {
+  margin: 0 0 12px;
+  color: #2563eb;
+  font-size: 22px;
+}
+
+/* Form */
+label {
+  display: block;
+  margin: 10px 0 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  margin-top: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  border: 1px solid #2563eb;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Text helpers */
+.hint {
+  color: #667085;
+  margin-top: 10px;
+}
+
+.err {
+  color: #b91c1c;
+  margin: 8px 0;
+}
+
+.nav {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.nav a {
+  color: #2563eb;
+  text-decoration: none;
+}
