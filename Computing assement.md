@@ -123,14 +123,23 @@ After evaluating these options, I chose the final storyboard design because it a
 **Development** 
 
 
-**Documentation** 
+
 
 # Testing And Evaluating
 
 
 **Peer Evaluation** 
 
+
 **Evalution Of Issues**
+
+My site is simple and readable, which helps. To be more inclusive I will add visible focus styles to all interactive elements, make sure the pop-up traps focus and closes with Esc, and check colour contrast so text is easy to read for everyone.
+
+Ethical  :
+I will check that quotes are accurate and clearly attributed. I’ll avoid misattributed lines and remove anything I can’t verify. If I add comments or submissions later, I’ll moderate for respectful content.
+
+Legal : 
+Short quotes can still be copyrighted. I will prefer public-domain quotes where possible and always include the author and a reliable source (book/speech/date). For the login, I won’t store sensitive data for this task; if I expand it, I’ll use proper password hashing, add a privacy note, and protect forms.
 
 **Project Evaluation**
 

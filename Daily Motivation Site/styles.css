@@ -1,207 +1,175 @@
-/* Page */
-body {
-  font-family: Arial, sans-serif;
-  background: #f5f7ff;
-  color: #222;
-  margin: 0;
+/* I rely on the native [hidden] attribute to hide things like the modal */
+[hidden]{
+  display: none !important;
 }
 
-h1 {
-  margin: 0;
+/* Light theme with strong contrast so reading is easy */
+:root{
+  --bg-1:#eef4ff;
+  --bg-2:#e8f0ff;
+  --text:#0b1433;
+  --muted:#3f4d76;
+
+  --card:#ffffff;
+  --card-tint:#f7f9ff;
+  --border:#c7d3f5;
+
+  --brand:#2f6bff;
+  --shadow:0 10px 28px rgba(23, 34, 74, .18);
 }
 
-h2 {
-  margin: 0;
+/* Soft color hints for tag labels */
+[data-tag="Success"]      { --tag:#179b4d; }
+[data-tag="Leadership"]   { --tag:#2a7ff0; }
+[data-tag="Life"]         { --tag:#b35c00; }
+[data-tag="Courage"]      { --tag:#c24b12; }
+[data-tag="Action"]       { --tag:#5248ea; }
+[data-tag="Opportunity"]  { --tag:#0ea5b1; }
+[data-tag="Belief"]       { --tag:#7b39d3; }
+[data-tag="Dreams"]       { --tag:#5aa304; }
+[data-tag="Perseverance"] { --tag:#d22f2f; }
+
+/* Basic page setup + background gradient */
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family:'Poppins', system-ui, Arial, sans-serif;
+  color:var(--text);
+  background:linear-gradient(120deg,var(--bg-1),var(--bg-2));
+  overflow-x:hidden;
 }
 
-.wrap {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 12px;
+/* Gentle animated blobs to add depth */
+.bg{
+  position:fixed; inset:-25vmax; z-index:-2;
+  background:
+    radial-gradient(42vmax 42vmax at 18% 22%, #b6c9ff, transparent 60%),
+    radial-gradient(38vmax 38vmax at 80% 28%, #aeeaff, transparent 60%),
+    radial-gradient(46vmax 46vmax at 50% 80%, #d2dbff, transparent 60%);
+  filter:blur(70px);
+  opacity:.33;
+  animation:float 18s ease-in-out infinite alternate;
+}
+@keyframes float{
+  from{ transform:translateY(-1rem) scale(1.02); }
+  to  { transform:translateY(1rem)  scale(1.00); }
 }
 
-.muted {
-  color: #667085;
+/* Small layout helpers so I don’t repeat CSS */
+.wrap{ width:min(1100px,92vw); margin:0 auto; }
+.row{ display:flex; align-items:center; justify-content:space-between; }
+.gap{ display:flex; align-items:center; gap:.6rem; }
+.space-top{ padding-top:1rem; }
+.muted{ color:var(--muted); }
+
+/* Sticky header with a soft blur so it feels “glass” */
+.head{
+  position:sticky; top:0; z-index:10;
+  backdrop-filter:blur(8px);
+  background:#f5f8ffcc;
+  border-bottom:1px solid var(--border);
+}
+.head .wrap{ padding:.9rem 0; }
+.brand{
+  color:var(--text); text-decoration:none;
+  font-weight:700; letter-spacing:.3px;
+}
+.tools{ display:flex; gap:.5rem; flex-wrap:wrap; }
+
+/* Inputs and chips look touch-friendly */
+.search{
+  flex:1; padding:.75rem 1rem; border-radius:12px;
+  border:1.5px solid var(--border);
+  background:var(--card-tint);
+  color:var(--text); outline:none;
+}
+.tags{ display:flex; gap:.4rem; flex-wrap:wrap; }
+
+.btn{
+  padding:.6rem .95rem; border-radius:12px;
+  border:2px solid var(--brand);
+  background:var(--brand); color:#fff;
+  font-weight:700; cursor:pointer; box-shadow:var(--shadow);
+}
+.btn.ghost{ background:#fff; color:var(--brand); }
+
+.chip, .tag{
+  padding:.35rem .7rem; border-radius:999px;
+  font-weight:700; background:#fff; color:var(--text);
+  border:1.5px solid var(--border);
+}
+.chip.active{ outline:3px solid #e6eeff; }
+
+.icon{
+  width:40px; height:40px; display:grid; place-items:center;
+  border-radius:10px; border:1.5px solid var(--border); background:#fff;
+  cursor:pointer;
 }
 
-/* Header */
-.bar {
-  background: #fff;
-  border-bottom: 1px solid #e5e7eb;
+/* Cards feel like solid glass panels */
+.card{
+  background:var(--card);
+  border:1.5px solid var(--border);
+  border-radius:18px; padding:1rem;
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
+  border-color:#a9b8e6;
+}
+.card-top,.card-bottom{
+  display:flex; align-items:center; justify-content:space-between; gap:.6rem;
+}
+.byline{ color:var(--muted); display:flex; gap:.5rem; align-items:center; }
+.actions{ display:flex; gap:.4rem; }
+
+.quote{ font-size:1.08rem; line-height:1.6; margin:.6rem 0 1rem; font-weight:600; }
+.quote-xl{ font-size:clamp(1.5rem,2.8vw,2.1rem); line-height:1.35; margin:0; font-weight:800; }
+.qmark{ color:#7483ad; font-size:2rem; margin:.4rem 0 0; }
+.qmark.end{ text-align:right; }
+
+/* I tint the little tag ring using a CSS variable per tag */
+.card .tag{ border-color:var(--tag, var(--border)); }
+
+/* The hero gets a bit more breathing room */
+.hero{ padding:1.2rem 1.2rem 1rem; }
+
+/* Responsive grid: 3 → 2 → 1 columns */
+.grid{
+  margin-top:1rem;
+  display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:.9rem;
+}
+@media (max-width:980px){ .grid{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:640px){ .grid{ grid-template-columns:1fr; } }
+
+/* Frosted modal with focus animation */
+.overlay{
+  position:fixed; inset:0; display:grid; place-items:center; padding:1rem;
+  backdrop-filter:blur(6px);
+  background:rgba(15,23,42,.65);
+}
+.modal{
+  width:min(700px,92vw); border-radius:18px;
+  border:1.5px solid var(--border);
+  background:rgba(255,255,255,.96);
+  padding:1.2rem; box-shadow:var(--shadow);
+  animation:pop .2s ease; outline:none;
+}
+@keyframes pop{ from{ transform:scale(.98); opacity:.3; } to{ transform:scale(1); opacity:1; } }
+.close{
+  position:absolute; right:12px; top:12px; width:40px; height:40px;
+  border-radius:10px; border:1.5px solid var(--border); background:#fff; cursor:pointer;
+}
+.center{ text-align:center; }
+
+/* Small toast that appears at the bottom */
+.toast{
+  position:fixed; left:50%; bottom:24px; transform:translateX(-50%);
+  background:#0b1433; color:#fff; padding:.6rem .9rem; border-radius:999px;
+  box-shadow:0 10px 28px rgba(0,0,0,.25); z-index:20; font-weight:700;
 }
 
-.bar .wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 0;
-}
-
-.brand {
-  color: #2563eb;
-}
-
-/* Chips / tags */
-.chip,
-.tag {
-  display: inline-block;
-  background: #eaf2ff;
-  color: #1e40af;
-  border: 1px solid #dbeafe;
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-/* Buttons */
-.btn {
-  background: #2563eb;
-  color: #fff;
-  border: 1px solid #2563eb;
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.btn-outline {
-  background: #fff;
-  color: #1f2937;
-  border: 1px solid #e5e7eb;
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin: 0 6px;
-}
-
-.icon {
-  width: 38px;
-  height: 38px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  background: #fff;
-  cursor: pointer;
-}
-
-.link {
-  background: transparent;
-  border: none;
-  color: #667085;
-  cursor: pointer;
-}
-
-/* Card */
-.card {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 16px;
-  margin-top: 16px;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-/* Quote text */
-.quote {
-  font-style: italic;
-  margin: 10px 0;
-}
-
-.big {
-  font-size: 22px;
-  text-align: center;
-}
-
-.quote-mark {
-  color: #94a3b8;
-  margin: 0;
-}
-
-.right {
-  text-align: right;
-}
-
-/* Grid (responsive) */
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -8px;
-}
-
-.grid .card {
-  width: 100%;
-  margin: 8px;
-}
-
-@media (min-width: 700px) {
-  .grid .card {
-    width: calc(50% - 16px);
-  }
-}
-
-@media (min-width: 1000px) {
-  .grid .card {
-    width: calc(33.333% - 16px);
-  }
-}
-
-/* Modal */
-#overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-}
-
-#modal {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 620px;
-  padding: 16px;
-  position: relative;
-}
-
-#close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.center {
-  text-align: center;
-}
-
-.modal-quote {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: start;
-  gap: 6px;
-  margin: 12px 0;
-}
-
-/* Footer */
-.foot {
-  text-align: center;
-  color: #667085;
-  padding: 20px 0 40px;
-}
+/* Quiet, centered footer */
+.foot{ color:var(--muted); text-align:center; padding:2rem 0 3rem; }
