@@ -2,7 +2,21 @@
 
 **Divergent Thinking**
 
-Mindmap
+ Mindmap 
+![alt text](<Screenshot 2025-09-21 at 22.07.28.png>)
+
+6 Big Ideas 
+
+| Idea Name              | What It Does                                                                 | Influence it Explores                            | Who It Helps                            |
+|------------------------|-------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------|
+| **Daily Motivation**       | A platform where people share daily motivational quotes and stories.          | Influence of positivity and encouragement.      | Students, young professionals.           |
+| **HabitHero**          | An app that tracks habits and rewards consistency with motivational streaks.  | Influence of daily routines on success.         | Anyone trying to build healthy habits.   |
+| **TrendLens**          | A site that explains where trends come from and how they spread.              | Influence of culture and media.                 | Social media users, marketers.           |
+| **MusicMood**          | An app that matches music to your mood and explains its cultural meaning.     | Influence of music on emotions and identity.    | Teenagers, creatives, music lovers.      |
+| **LeaderVision**       | A website summarising leaders’ ideas and visions in simple words.             | Influence of political and social leaders.      | Voters, students, people learning civics.|
+| **MindMapIt**          | A web app that lets users brainstorm and share mindmaps visually.             | Influence of collaboration and shared thinking. | Groups, classrooms, teams.               |
+
+I picked Daily Motivation because it’s simple, effective, and directly helps users stay motivated in a way that fits easily into their daily routine.
 
 **Convergent Thinking** 
 
