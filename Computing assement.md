@@ -118,6 +118,13 @@ After evaluating these options, I chose the final storyboard design because it a
 
 **Prototype**
 
+Below is my prototype which is a Daily Motivation app where I can browse and search quotes, filter by tags, favourite and copy them, and open any quote in a simple pop-up.
+
+![alt text](<Screenshot 2025-09-18 at 09.33.29.png>)
+![alt text](<Screenshot 2025-09-18 at 10.20.34.png>)
+![alt text](<Screenshot 2025-09-21 at 18.50.03.png>)
+![alt text](<Screenshot 2025-09-21 at 18.50.15.png>)
+
 # Producing And Implenting 
 
 **Development** 
