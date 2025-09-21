@@ -6,7 +6,7 @@ Mindmap
 
 **Convergent Thinking** 
 
-"An Impact vs Effort Matrix is a decision-making tool that helps prioritize tasks based on their potential impact and the effort required to complete them. It is a 2x2 grid that categorizes tasks into four quadrants:"
+"An Impact vs Effort Matrix is a decision making tool that helps prioritise tasks based on their potential impact and the effort required to complete them. It is a 2x2 grid that categorises tasks into four quadrants:"
 
 Below is the Impact / Effort Matrix which has organised my choice of apps on a cartesian plane. 
 
@@ -16,7 +16,7 @@ Impact / Effort Matrix
 
 Swot Analysis
 
-"SWOT analysis is a strategic planning tool used to identify the Strengths, Weaknesses, Opportunities, and Threats related to a project or business endeavor. Strengths and weaknesses are internal factors, while opportunities and threats are external. This analysis helps in understanding our current position and aids in strategic decision-making."
+"SWOT analysis is a strategic planning tool used to identify the Strengths, Weaknesses, Opportunities, and Threats related to a project or business endeavor. Strengths and weaknesses are internal factors, while opportunities and threats are external. This analysis helps in understanding our current position and aids in strategic decision making."
 
 Below is the worked swot analysis which has been filled by my friends and family. This was done to see the pros and cons of my two choices of apps.  
 
@@ -33,21 +33,17 @@ Functional Requirements
 
 - A daily motivational quote should appear on the homepage, giving users instant inspiration each time they visit.
 
-- Users should be able to 
-
 - The site should include a quote library with categories (e.g., Success, Leadership, Happiness, Focus) to help users quickly find the type of motivation they’re looking for.
-
-- A random quote generator button is important, as it keeps the experience fresh and engaging without requiring manual browsing.
 
 - Users should be able to like or save their favorite quotes, allowing them to build a personal collection for easy access later.
 
-- Sharing options (copy, download, or social media) are needed so that motivation can be spread beyond the app and into users’ networks.
+- Sharing options (copy, download, or social media) are needed so that motivation can be spread beyond the app and into users networks.
 
 Non-Functional Requirements
 
 - Pages must load in under two seconds to prevent users from losing interest.
 
-- Random quote generation should feel instant, making the interaction smooth and enjoyable.
+- Affirmation generation should feel instant, making the interaction smooth and enjoyable.
 
 - A clean, minimal interface is required to keep the focus on the quotes themselves.
 
@@ -61,7 +57,6 @@ Non-Functional Requirements
 
 - Alt text for images and backgrounds should be provided so screen readers can describe visual elements.
 
-- Keyboard navigation support ensures the site can be used effectively without a mouse.
 
 # Researching And Planning
 
@@ -73,15 +68,16 @@ PMI ANALYSIS
 
 | Platform     |  Plus |  Minus |  Implication |
 |--------------|--------|----------|----------------|
-| **Spotify**  | Spotify makes listening feel personal. It learns your taste and delivers playlists and recommendations that often feel spot-on. With smooth syncing across devices and a massive music and podcast library, it’s easy to get lost in sound. This is what makes this application so great | The free version interrupts with ads, which can break the vibe. It’s also not very social, sharing music feels clunky. And sometimes, the recommendations may be on your previous interests, which makes it less . | Spotify could benefit from more community-driven features like collaborative playlists or music circles. Mixing algorithmic suggestions with human-curated content could make discovery more exciting and authentic. |
-| **Instagram**| Instagram is visually addictive, with tools like Reels and Stories that make content creation fun and fast. It’s a powerful platform for creators to build audiences and express themselves creatively. | The algorithm can bury smaller voices, and the constant comparison culture can take a toll on mental health. It also lacks depth when it comes to long-form storytelling or meaningful conversations. | Instagram should explore features that support emotional well-being and give users more control over what they see. Adding richer storytelling formats could help deepen engagement and reduce superficial scrolling. |
-| **YouTube**  | YouTube is a treasure trove of content—from tutorials to entertainment—and gives creators real opportunities to earn and grow. Its search and recommendation tools make it easy to find what you’re looking for. | Ads can be overwhelming, especially for casual viewers. The platform struggles with moderation, and new users might feel lost in the sea of content. | YouTube could improve the onboarding experience and make content discovery more intuitive. Supporting niche communities and refining ad delivery could make the platform more welcoming and user-friendly. |
+| **Spotify**  | Spotify makes listening feel personal. It learns your taste and delivers playlists and recommendations that often feel spot on. With smooth syncing across devices and a massive music and podcast library, it’s easy to get lost in sound. This is what makes this application so great | The free version interrupts with ads, which can break the vibe. It’s also not very social, sharing music feels clunky. And sometimes, the recommendations may be on your previous interests, which makes it less fun . | Spotify could benefit from more community driven features like collaborative playlists or music circles. Mixing algorithmic suggestions with human curated content could make discovery more exciting and authentic. |
+| **Instagram**| Instagram is visually addictive, with tools like Reels and Stories that make content creation fun and fast. It’s a powerful platform for creators to build audiences and express themselves creatively. | Most of the time, popular creators always get the views no matter the algorithm or the videos which raises a problem of connectivity as small creators aren't able to reach their full potential on Instagram.| Instagram should explore features that support emotional well being and give users more control over what they see. Adding richer storytelling formats could help deepen engagement and reduce superficial scrolling. |                                      
+| **YouTube** | Youtube is a great app that allows for multiple content to be shared accross its platform. Personally I use youtube the most as it is the most family friendly and allows for a wide range of videos, shorts and music | Ads can feel heavy, especially when I’m just browsing. And watching youtube takes much more mobile data than all the other social media applications | Youtube can improve by giving better search recomendations to the user after 1 watched video and can improve in the amount of ads it gives throughout the video|
+
  
  **Secondary Research** 
 
-Teens today are navigating a world that’s more complex and emotionally demanding than ever. Between academic pressure, social media, climate anxiety, and the lingering effects of the pandemic, many young people are feeling overwhelmed. A recent global report from the Lancet Commission on Adolescent Health warned that mental health issues, obesity, and emotional stress are rising fast among teens—and Australia is no exception. Young people here are reporting higher levels of anxiety, low self-esteem, and difficulty coping with everyday challenges. It’s not just about feeling sad or stressed; it’s about not knowing where to turn or how to process what they’re going through.
+Teens today are navigating a world that’s more complex and emotionally demanding than ever. Between academic pressure, social media, climate anxiety, and the lingering effects of the pandemic, many young people are feeling overwhelmed. A recent global report from the Lancet Commission on Adolescent Health warned that mental health issues, obesity, and emotional stress are rising fast among teens and Australia is no exception. Young people here are reporting higher levels of anxiety, low self-esteem, and difficulty coping with everyday challenges. It’s not just about feeling sad or stressed; it’s about not knowing where to turn or how to process what they’re going through.
 
-At the same time, digital platforms, while offering connection—can also make things worse. Apps like TikTok and Instagram have been called out for promoting addictive scrolling and unrealistic standards, which can fuel comparison and self-doubt. According to the Youth Mental Health Tracker, nearly half of young Australians aged 10–24 have struggled with mental health in the past two years, and a significant number have experienced self-harm or thoughts of it. That’s where your app comes in. A space for self-reflection, milestone tracking, and emotional journaling could give teens a healthier outlet. Instead of doomscrolling, they’d have a tool that helps them pause, reflect, and grow. Features like mood check-ins, guided prompts, and progress milestones could help them feel more in control—and remind them that even small steps forward matter.
+At the same time, digital platforms, while offering connection—can also make things worse. Apps like TikTok and Instagram have been called out for promoting addictive scrolling and unrealistic standards, which can fuel comparison and self doubt. According to the Youth Mental Health Tracker, nearly half of young Australians aged 10–24 have struggled with mental health in the past two years, and a significant number have experienced self harm or thoughts of it. That’s where this app can be beneficial. A space for self reflection, milestone tracking, and emotional journaling could give teens a healthier outlet. Instead of doomscrolling, they’d have a tool that helps them pause, reflect, and grow. Features like mood check ins, guided prompts, and progress milestones could help them feel more in control and remind them that even small steps forward matter.
 
 
 **Primary Research**
@@ -96,7 +92,7 @@ When asked about motivational quotes, 45% of respondents said they rarely see qu
 
 ![alt text](<Screenshot 2025-09-16 at 15.06.36.png>)
 
-The final question confirmed this: 55% of respondents said they don’t see any motivational quotes around them at all, while only 20% said they see 1–5. This shows a clear opportunity for my app, as most people don’t currently encounter motivational content in their daily lives.
+The final question showed that 55% of respondents said they don’t see any motivational quotes around them at all, while only 20% said they see 1–5. This shows a clear opportunity for my app, as most people don’t currently encounter motivational content in their daily lives.
 
 ![alt text](<Form Question .png>)
 
@@ -105,15 +101,18 @@ Overall, my research made it clear that Australians do experience stress but are
 
 **UI / UX Design**
 
-To design the user interface for my motivational app, I created and compared alternative designs using wireframes and storyboards. I sketched out different layouts on paper to explore ideas quickly, before moving on to digital prototypes in Figma.
+To design the user interface for my motivational app, I created and compared alternative designs using wireframes. I sketched out different layouts on paper to explore ideas quickly, before moving on to digital prototypes in Figma.
 
 My first design option had a homepage focused only on a daily quote, with a minimal layout and a single “next quote” button. The strength of this design was its simplicity, but the weakness was that it didn’t encourage deeper engagement.
 
-My second design option included a homepage with tabs for “Daily Quote,” “Habit Tracker,” and “Saved Quotes.” This design gave users more functionality but risked feeling cluttered if too many features were added.
+![alt text](wireframe_mobile_home.png)
 
-My final storyboard combined the strengths of both. It used a clean homepage with the daily quote at the centre, but also included subtle navigation buttons for habits and saved content. This design was more balanced, keeping the interface simple but still allowing users to explore features if they wanted.
+My second wireframe shows the saved quote section. If a user were to save a quote and come back to it later, they would look at the saved quotes on this page of the site 
 
-After evaluating these options, I chose the final storyboard design because it aligns best with my survey results. Users wanted motivational quotes as the main feature, but they also valued reminders and tracking progress. This design makes motivational quotes the focus while still providing easy access to additional features.
+![alt text](wireframe_mobile_saved.png)
+
+
+After evaluating these options, I chose these designs because it aligns best with my survey results. Users wanted motivational quotes as the main feature, but they also valued reminders and tracking progress. This design makes motivational quotes the focus while still providing easy access to additional features.
 
 
 **Prototype**
@@ -121,14 +120,9 @@ After evaluating these options, I chose the final storyboard design because it a
 Below is my prototype which is a Daily Motivation app where I can browse and search quotes, filter by tags, favourite and copy them, and open any quote in a simple pop-up.
 
 ![alt text](<Screenshot 2025-09-18 at 09.33.29.png>)
-![alt text](<Screenshot 2025-09-18 at 10.20.34.png>)
+![alt text](image.png)
 ![alt text](<Screenshot 2025-09-21 at 18.50.03.png>)
 ![alt text](<Screenshot 2025-09-21 at 18.50.15.png>)
-
-# Producing And Implenting 
-
-**Development** 
-
 
 
 
@@ -137,16 +131,34 @@ Below is my prototype which is a Daily Motivation app where I can browse and sea
 
 **Peer Evaluation** 
 
+Stephen Wirianata 
+
+I think your site does a really good job of keeping things simple and easy to use. The quotes are right there in the middle which makes it clear what the app is about, and the navigation is straightforward. I like the clean look and how everything loads quickly. One thing I noticed is that the design could maybe use a little more variety in colour or imagery to keep users engaged for longer. Overall, though, it feels polished and focused on its main purpose.
+
+Vedansh Bhale 
+
+The thing I found most impressive about your site is how organised it is. The sections are clearly separated and the buttons are easy to understand, which makes it friendly for new users. I also liked that it doesn’t overwhelm me with too many features at once. On the other hand, it might be useful to add more interactive elements, like a way to customise the quotes or set reminders. That would make it more personal and keep people coming back.
+
+Ansh Deole 
+
+From my perspective, the best part about your site is how motivating it feels. The quotes are easy to read, and the overall style matches the positive theme. It’s also good that the site isn’t cluttered, so it stays focused on motivation. The downside is that sometimes it feels a bit too minimal, and I think more visual elements (like icons or images) could make it look more modern. Even with that, the site already does a great job at what it sets out to do.
 
 **Evalution Of Issues**
 
-My site is simple and readable, which helps. To be more inclusive I will add visible focus styles to all interactive elements, make sure the pop-up traps focus and closes with Esc, and check colour contrast so text is easy to read for everyone.
+Social Issues
 
-Ethical  :
-I will check that quotes are accurate and clearly attributed. I’ll avoid misattributed lines and remove anything I can’t verify. If I add comments or submissions later, I’ll moderate for respectful content.
+My site focuses on sharing positive and motivational quotes, which helps people feel encouraged and supported. I made sure the design is clear and friendly so it can be used by anyone.
 
-Legal : 
-Short quotes can still be copyrighted. I will prefer public-domain quotes where possible and always include the author and a reliable source (book/speech/date). For the login, I won’t store sensitive data for this task; if I expand it, I’ll use proper password hashing, add a privacy note, and protect forms.
+Ethical Issues
+
+I avoided adding anything offensive or inappropriate to keep the site respectful and safe. The content is designed to promote good habits and positive thinking.
+
+Legal Issues
+
+I only used quotes and material that are free to share so there are no copyright problems. I also didn’t collect personal data, which keeps the site safe from privacy concerns.
 
 **Project Evaluation**
 
+At the start of my project, I planned a very simple website that would only display a daily quote with a button to see the next one. While this design was easy to follow, I realised it was too basic and didn’t give users much reason to keep returning to the site. After looking at my wireframes and thinking about user feedback, I decided to expand the plan to include extra features like navigation and saved quotes.
+
+In the end, my final product is well balanced. It makes motivational quotes the clear focus, but also has space for users to save favourites and explore more if they want to. The site looks professional, is easy to navigate, and loads quickly. Overall, the changes I made during the project improved the quality a lot, and I think the final version meets the requirements while also being enjoyable for the target audience to use.
